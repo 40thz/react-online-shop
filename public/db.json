@@ -1,0 +1,247 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Смартфон Apple iPhone",
+      "logo": "https://cdn-st1.rtr-vesti.ru/vh/pictures/xw/143/116/4.jpg",
+      "price": 1100,
+      "description": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "phone",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 2,
+      "name": "Смартфон Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1230,
+      "description": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "phone",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 3,
+      "name": "Планшет Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1800,
+      "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "tablet",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 4,
+      "name": "Компьютер",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 2200,
+      "description": "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "computer",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 5,
+      "name": "Ноутбук Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 6,
+      "name": "Ноутбук Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification":
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 7,
+      "name": "Ноутбук Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": 
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 8,
+      "name": "Часы Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": 
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    },
+    {
+      "id": 9,
+      "name": "Часы Apple iPhone",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": 
+        {
+          "screenType": "IPSs",
+          "images": [
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/",
+            "https://picsum.photos/id/1018/1000/600/"
+          ],
+          "brandImg": "apple-logo.png",
+          "screenResolution": "2400x1080",
+          "typeGlass": "Corning Gorilla Glass 5",
+          "Frameless": "да",
+          "operationSystem": "Android",
+          "versionOC": 10,
+          "shellVersion": 2,
+          "simCardFormat": "nano-SIM",
+          "caseMaterial": "пластик/стекло"
+        }
+    }
+  ]
+}
