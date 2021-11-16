@@ -33,14 +33,14 @@ function App() {
       }
     }
   }
-  console.log(searchItem)
+  console.log(items)
   return (
     <Switch>
       <div className="App">
-      <Header filterCategory={filterCategory} searchItem={searchItem} items={items} setSearchItem={setSearchItem}/>
+      <Header setProductId={setProductId} filterCategory={filterCategory} searchItem={searchItem} items={items} setSearchItem={setSearchItem}/>
         <div className="container">
           <div className="main__catalog">
-            <Route path='/catalog' render={() => <Home  searchItem={searchItem} filter={filterCategory} func={setProductId} items={items} sortItems={sortItems} />} />
+            <Route path='/catalog' render={() => <Home  searchItem={searchItem} filter={filterCategory} setProductId={setProductId} items={items} sortItems={sortItems} />} />
             <Route path='/product/:id' render={() => <Product productFunc={setProductId} productId={productId} items={items} />} />
             <Route component={NotFound} />
           </div>

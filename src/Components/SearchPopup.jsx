@@ -1,27 +1,36 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function SearchPopup() {
+function SearchPopup({ items, inputValue, filtering, setProductId, setInputValue  }) {
+    const unvisibleWindow = (id) =>{
+        setProductId(id)
+        setInputValue('');
+    }
     return (
         <div>
-            
-                <div className="searchpopup__item">
-                    <div className="searchpopup__item--logo">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLaDGsGqJkvCzfWDHS417Ye7Pasz9wOorhJw&usqp=CAU" alt="" />
+            {filtering.map((item, index) => (
+                <Link  onClick={() => unvisibleWindow(item.id)} to={`/product/${item.id}`}>
+                    <div key={index} className="searchpopup__item">
+                        <div className="searchpopup__item--logo">
+                            <img src={item.logo} alt="" />
+                        </div>
+                        <div className="searchpopup__rightside">
+                            <div className="searchpopup__item--title">
+                                <span>{item.name}</span>
+                            </div>
+                            <div className="searchpopup__item--price">
+                                <span>{item.price}</span>
+                            </div>
+                            <div className="searchpopup__item--btn">
+                                <span>Перейти</span>
+                                <img src="./shopping-cart.svg" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    <div className="searchpopup__rightside">
-                        <div className="searchpopup__item--title">
-                            <span>Планшет Apple iPhone</span>
-                        </div>
-                        <div className="searchpopup__item--price">
-                            <span>1800 $</span>
-                        </div>
-                        <div className="searchpopup__item--btn">
-                            <span>Перейти</span>
-                            <img src="./shopping-cart.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-            
+                </Link>
+
+            ))}
+
         </div>
     )
 }

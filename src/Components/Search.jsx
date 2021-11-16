@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import SearchPopup from './SearchPopup'
+import classnames from 'classnames';
 
 
-function Search({ items, setSearchItem  }) {
+function Search({ items, setSearchItem, setProductId  }) {
     const [inputValue, setInputValue] = React.useState('');
     
         const filtering = items.filter(product => {
@@ -11,13 +12,11 @@ function Search({ items, setSearchItem  }) {
     return (
         <Fragment>
            <div className="header__search--input">
-                <input onChange={(e) => console.log(e.target.value)} onInput={(e) => setInputValue(e.target.value)} type="text" />
-                <div onClick={() => setSearchItem(filtering)} className="header__search--btn"> <img src="./search-svgrepo-com.svg" alt="home" /></div>
+                <input onInput={(e) => setInputValue(e.target.value)} type="text" />
+                <div onClick={() => setSearchItem(filtering)} className="header__search--btn"> <img src="/search-svgrepo-com.svg" alt="search" /></div>
             </div>
-            <div className="searchpopup__container">
-                <SearchPopup />
-                <SearchPopup />
-                <SearchPopup />
+            <div className={classnames('searchpopup__container', !inputValue ? 'dn' : '')}>
+                <SearchPopup setProductId={setProductId} filtering={filtering} setInputValue={setInputValue} inputValue={inputValue} items={items} />
             </div>
             
         </Fragment>

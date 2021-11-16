@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Card = ({ items, func, searchItem }) => {
+const Card = ({ items, setProductId, searchItem }) => {
 
     const addToCartShop = (id) => {
         console.log(id)
@@ -11,7 +11,7 @@ const Card = ({ items, func, searchItem }) => {
             {searchItem.map((item, index) => (
                 <div key={index} className="card">
                     <div className="card__top">
-                        <Link onClick={() => func(item.id)} to={`/product/${item.id}`}>
+                        <Link onClick={() => setProductId(item.id)} to={`/product/${item.id}`}>
                             <div className="card__top--logo">
                                 <img src={item.logo} alt="itemLogo" />
                             </div>
@@ -19,7 +19,7 @@ const Card = ({ items, func, searchItem }) => {
                     </div>
                     <div className="card__bottom">
                         <div className="card__bottom--leftSide">
-                            <div onClick={() => func(item.id)} className="card__bottom--name">
+                            <div onClick={() => setProductId(item.id)} className="card__bottom--name">
                                 <Link to={`/product/${item.id}`}>
                                     {item.name}
                                 </Link>

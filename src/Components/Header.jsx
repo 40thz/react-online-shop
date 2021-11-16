@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Search from './Search'
 
 
-function Header({items, setSearchItem, searchItem, filterCategory}) {
+function Header({items, setSearchItem, searchItem, filterCategory, setProductId}) {
     return (
         
         <div className="header">
@@ -18,7 +18,7 @@ function Header({items, setSearchItem, searchItem, filterCategory}) {
 
                     <div className="header__search">
                         {searchItem ? 
-                        <Search items={items} setSearchItem={setSearchItem}/> 
+                        <Search setProductId={setProductId} items={items} setSearchItem={setSearchItem}/> 
                         : 'loading'}
                         
                     </div>
