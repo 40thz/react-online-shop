@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Card = ({ items, func }) => {
+const Card = ({ items, func, searchItem }) => {
 
     const addToCartShop = (id) => {
         console.log(id)
@@ -8,7 +8,7 @@ const Card = ({ items, func }) => {
 
     return (
         <div className="catalog__content">
-            {items.map((item, index) => (
+            {searchItem.map((item, index) => (
                 <div key={index} className="card">
                     <div className="card__top">
                         <Link onClick={() => func(item.id)} to={`/product/${item.id}`}>

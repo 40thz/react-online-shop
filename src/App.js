@@ -11,33 +11,36 @@ import NotFound from './Components/NotFound';
 function App() {
   const [items, setItems] = React.useState(null);
   const [sortItems, setSortItems] = React.useState(null);
+  const [searchItem, setSearchItem] = React.useState(null);
   const [productId, setProductId] = React.useState(0)
 
   React.useEffect(() => {
     axios.get('/db.json').then(({ data }) => setItems(data.items))
     axios.get('/db.json').then(({ data }) => setSortItems(data.items))
+    axios.get('/db.json').then(({ data }) => setSearchItem(data.items))
   }, [])
 
 
   const filterCategory = (category) => {
     if (category === null) {
-      setItems(sortItems)
+      setSearchItem(sortItems)
     } else {
       if (sortItems) {
         let filterItem = sortItems.filter((item) => {
           return item.category === category;
         });
-        setItems(filterItem)
+        setSearchItem(filterItem)
       }
     }
   }
+  console.log(searchItem)
   return (
     <Switch>
       <div className="App">
-      <Header />
+      <Header filterCategory={filterCategory} searchItem={searchItem} items={items} setSearchItem={setSearchItem}/>
         <div className="container">
           <div className="main__catalog">
-            <Route path='/catalog' render={() => <Home filter={filterCategory} func={setProductId} items={items} sortItems={sortItems} />} />
+            <Route path='/catalog' render={() => <Home  searchItem={searchItem} filter={filterCategory} func={setProductId} items={items} sortItems={sortItems} />} />
             <Route path='/product/:id' render={() => <Product productFunc={setProductId} productId={productId} items={items} />} />
             <Route component={NotFound} />
           </div>

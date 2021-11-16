@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Card from './Card'
 import Sidebar from './Sidebar'
-function Home({ items, func, filter, sortItems }) {
+function Home({ items, func, filter, searchItem }) {
     return (
         <Fragment>
             <Sidebar filterCategory={filter} items={
@@ -34,8 +34,8 @@ function Home({ items, func, filter, sortItems }) {
             }
             />
             {
-            items ?
-                <Card func={func} items={items} />
+            searchItem ?
+                <Card searchItem={searchItem} func={func} items={items} />
                 : <span>Loading</span>}
         </Fragment>
     )

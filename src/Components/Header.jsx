@@ -2,21 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Search from './Search'
 
-function Header() {
+
+function Header({items, setSearchItem, searchItem, filterCategory}) {
     return (
+        
         <div className="header">
             <div className="container">
                 <div className="header__content">
-                    <div className="header__nav">
+                    <div onClick={ () => filterCategory(null)} className="header__nav">
                         <Link to='/catalog'><div className="home--btn">
                             <img src="/home.svg" alt="home" />
-                            <span>home</span>
                         </div>
                         </Link>
                     </div>
 
                     <div className="header__search">
-                        <Search />
+                        {searchItem ? 
+                        <Search items={items} setSearchItem={setSearchItem}/> 
+                        : 'loading'}
+                        
                     </div>
                 </div>
             </div>
