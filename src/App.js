@@ -18,6 +18,7 @@ function App() {
     axios.get('/db.json').then(({ data }) => setItems(data.items))
     axios.get('/db.json').then(({ data }) => setSortItems(data.items))
     axios.get('/db.json').then(({ data }) => setSearchItem(data.items))
+    document.title = 'Главная';
   }, [])
 
 

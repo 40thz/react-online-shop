@@ -11,14 +11,20 @@ const Product = ({ productId, productFunc, items }) => {
 
     let selectedProduct = false;
     let currentId = window.location.pathname.substr(9);
+    const [activeTab, setActiveTab] = React.useState(false)
+    
     if (items) {
         let sortProduct = items.find(item => item.id === productId)
         selectedProduct = sortProduct
     }
+
     if (productId === 0) {
         productFunc(parseInt(currentId))
     }
-    const [activeTab, setActiveTab] = React.useState(false)
+
+    React.useEffect(() => {
+        document.title = `Купить ${selectedProduct.name}`;
+    });
     return (
 
         <Fragment>

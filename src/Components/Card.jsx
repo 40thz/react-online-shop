@@ -24,7 +24,7 @@ const Card = ({ items, setProductId, searchItem }) => {
                                     {item.name}
                                 </Link>
                             </div>
-                            <div className="card__bottom--price">{item.price} $</div>
+                            <div className="card__bottom--price">{item.price} ₽</div>
                         </div>
                         <div className="card__bottom--rightSide">
                             <div onClick={() => addToCartShop(item.id)} className="card__bottom--btn"><img src="/shopping-cart.svg" alt="" /></div>
