@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "category": "phone"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode",
+      "category": "computer"
+    },
+    {
+      "id": 13,
+      "title": "json-server",
+      "author": "typicode"
+      ,
+      "category": "phone"
+    },
+    {
+      "id": 112,
+      "title": "json-server",
+      "author": "typicode"
+      ,
+      "category": "computer"
+    },
+    {
+      "id": 1561,
+      "title": "json-server",
+      "author": "typicode"
+      ,
+      "category": "computer"
+    },
+    {
+      "id": 323,
+      "title": "json-server",
+      "author": "typicode"
+      ,
+      "category": "phone"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,394 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Смартфон Apple iPhone 13 128 ГБ синий",
+      "logo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp",
+      "price": 79799,
+      "description": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "phone",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 2,
+      "name": "КОМПЬЮТЕР DEXP Aquilon O234",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/baaf3a9c89cbfdf982e407501e509b7c/bf2c799729f4955bea898d5ed25036cd0eb2f94c9bee7845569d7219c10658bf.jpg.webp",
+      "price": 12999,
+      "description": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "computer",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Планшет Lenovo Tab P11 TB-J606F 64 ГБ серый",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/a430ba9404d17d8d59377cfb1f060bdb/503f84b199e99348a810c21b3c7959591e3412a617fabd1e300dec87ac47f3c8.jpg.webp",
+      "price": 19999,
+      "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "tablet",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 4,
+      "name": "КОМПЬЮТЕР DEXP Atlas H312",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/b3cc236b1da304b36c4162abb5389c73/39b66ca743987e15a8ef8f1e0a3c76a437f289892b24b00126a67627f876b104.jpg.webp",
+      "price": 22999,
+      "description": "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "computer",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Ноутбук Apple MacBook Air серый",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/30344fa068d6d14edf4242156fc203a7/41fbb0012918eb89be15f209addbb49912ee554576f157be471a9728f040d32c.jpg.webp",
+      "price": 104999,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Ноутбук ASUS ROG Strix G17 G713QM-HX181 серый",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg",
+          "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg",
+          "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg",
+          "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Ноутбук MSI GP66 11UH-054XRU черный",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2ef034eaa528ebf7964c18e192768f1d/b7c22ee3e5a1b3a27fb841f0d55d100f4e694160ca863dff11e3ec12299a634d.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d5699a9f8a76dcd6edf3a752cfa49f2d/ea5867fa9ac6e12a00829ec13d9eb6b063f0fc9c66ec0829dd65ad18580ecfeb.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/de47c438a635547364329d081d076836/c353d5d34e10a75015d04e5d2fd02c03dfa8f63c9e336a34b9fbcbd8eac4af77.jpg.webp",
+      "price": 23799,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Ноутбук MSI GP66 11UH-054XRU черный",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2ef034eaa528ebf7964c18e192768f1d/b7c22ee3e5a1b3a27fb841f0d55d100f4e694160ca863dff11e3ec12299a634d.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d5699a9f8a76dcd6edf3a752cfa49f2d/ea5867fa9ac6e12a00829ec13d9eb6b063f0fc9c66ec0829dd65ad18580ecfeb.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/de47c438a635547364329d081d076836/c353d5d34e10a75015d04e5d2fd02c03dfa8f63c9e336a34b9fbcbd8eac4af77.jpg.webp",
+      "price": 23799,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Ноутбук MSI GP66 11UH-054XRU черный",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/2ef034eaa528ebf7964c18e192768f1d/b7c22ee3e5a1b3a27fb841f0d55d100f4e694160ca863dff11e3ec12299a634d.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "laptop",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/d5699a9f8a76dcd6edf3a752cfa49f2d/ea5867fa9ac6e12a00829ec13d9eb6b063f0fc9c66ec0829dd65ad18580ecfeb.jpg.webp",
+      "price": 1500,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Часы Apple Watch SE GPS 40mm",
+      "logo": "https://c.dns-shop.ru/thumb/st4/fit/500/500/de47c438a635547364329d081d076836/c353d5d34e10a75015d04e5d2fd02c03dfa8f63c9e336a34b9fbcbd8eac4af77.jpg.webp",
+      "price": 23799,
+      "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "category": "clock",
+      "specification": {
+        "screenType": "IPSs",
+        "images": [
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/",
+          "https://picsum.photos/id/1018/1000/600/"
+        ],
+        "brandImg": "apple-logo.png",
+        "screenResolution": "2400x1080",
+        "typeGlass": "Corning Gorilla Glass 5",
+        "Frameless": "да",
+        "operationSystem": "Android",
+        "versionOC": 10,
+        "shellVersion": 2,
+        "simCardFormat": "nano-SIM",
+        "caseMaterial": "пластик/стекло"
+      }
+    }
+    ]
+  }
