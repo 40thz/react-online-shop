@@ -1,13 +1,13 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 
-function Buying() {
+function Buying({ currentItem }) {
     let navigate = useNavigate()
 
     return (
         <div className="main__product--buying">
             <div className="main__product--buying-price">
-                Цена: 1023
+                {currentItem.price}
             </div>
             <div>
                 <div className="main__product--buying-btn">

@@ -5,25 +5,35 @@
       "name": "Смартфон Apple iPhone 13 128 ГБ синий",
       "logo": "https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp",
       "price": 79799,
-      "description": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "description": "15.6 Ноутбук ASUS TUF Gaming FX506LH-HN004 выполнен в строгом игровым дизайном с декоративными элементами и необычной конструкцией. Благодаря большим петлям и высокой нижней рамке экрана обеспечивается удобное расположение дисплея непосредственно на уровне глаз, что поможет в полной мере насладиться геймплеем вне зависимости от того, где вы находитесь. Для большего удобства использования предусмотрена подсветка клавиш. Корпус модели выполнен из прочного пластика, за счет чего устройство отличается высокой надежностью. Ноутбук ASUS TUF Gaming FX506LH-HN004 оснащен матовым экраном на 15.6 с IPS-матрицей. Благодаря этому, а также разрешению 1920x1080 пикселей и развертке 144 Гц обеспечивается четкое и плавное изображение с естественными цветами и широкими углами обзора. В основе ноутбука используется 4-ядерный процессор Intel Core i5 10300H, что вкупе с видеокартой NVIDIA GeForce GTX 1650 обеспечит высокую эффективность работы в профессиональных приложениях и комфортную игру на высоких или максимальных настройках графики. Объем ОЗУ составляет 8 ГБ, для постоянного хранения файлов предусмотрен SSD-диск на 512 ГБ. Модель также отличается широкими возможностями подключения периферии за счет множества портов на корпусе, для беспроводного соединения используется Wi-Fi и Bluetooth.",
       "category": "phone",
       "specification": {
-        "screenType": "IPSs",
         "images": [
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -41,15 +51,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -67,15 +88,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -93,15 +125,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -119,15 +162,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -145,15 +199,26 @@
           "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg",
           "https://c.dns-shop.ru/thumb/st4/fit/0/0/39d1b810460a728f02079be7da333349/b865690edcd743e4f778f6eb21037586fb722e7582bb214cb3b7c735cdde8c2f.jpg"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -171,15 +236,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -197,15 +273,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -223,15 +310,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -249,15 +347,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -275,15 +384,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -301,15 +421,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -327,15 +458,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -353,15 +495,26 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     },
     {
@@ -379,16 +532,27 @@
           "https://picsum.photos/id/1018/1000/600/",
           "https://picsum.photos/id/1018/1000/600/"
         ],
-        "brandImg": "apple-logo.png",
-        "screenResolution": "2400x1080",
-        "typeGlass": "Corning Gorilla Glass 5",
-        "Frameless": "да",
-        "operationSystem": "Android",
-        "versionOC": 10,
-        "shellVersion": 2,
-        "simCardFormat": "nano-SIM",
-        "caseMaterial": "пластик/стекло"
+        "more": [
+          "screenType",
+          "IPSs",
+          "screenResolution",
+          "2400x1080",
+          "typeGlass",
+          "Corning Gorilla Glass 5",
+          "Frameless",
+          "да",
+          "operationSystem",
+          "Android",
+          "versionOC",
+          10,
+          "shellVersion",
+          2,
+          "simCardFormat",
+          "nano-SIM",
+          "caseMaterial",
+          "пластик/стекло"
+        ]
       }
     }
-    ]
-  }
+  ]
+}

@@ -13,16 +13,19 @@ class MyGallery extends React.Component {
     }
     render() {
         let images = []
+        this.props.currentItem.specification.images.forEach(img => {
             images.push({
-                original: 'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
-                thumbnail: 'https://c.dns-shop.ru/thumb/st1/fit/500/500/61f7965fa49ebbcd1fc5ccd2d2073680/93ba7a81a786695bdf44bb60000b82231d2c42bdddbb48c877cb0b559af6f608.jpg.webp',
+                original: img,
+                thumbnail: img,
             })
+        });
+            
 
         return (
 
             <div className="slider">
                 <div className="main__product--name">
-                    комп
+                {this.props.currentItem.name}
                 </div>
                 <ImageGallery
                     items={images}

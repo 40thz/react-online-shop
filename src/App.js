@@ -18,6 +18,7 @@ function App() {
       })
       .then((data) => {dispatch(SET_PRODUCTS(data.items))});
   })
+  
   return (
     <div className="App">
       <Header />

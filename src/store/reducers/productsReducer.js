@@ -1,6 +1,9 @@
 const initialState = {
-    items: false
+    items: false,
+    currentItem: {},
+    currentItemTab: false
 }
+
 const productsReducer = (state = initialState, action) => {
 
 
@@ -8,7 +11,12 @@ const productsReducer = (state = initialState, action) => {
 
         case 'SET_PRODUCTS':
             return { ...state, items: state.items = action.payload }
-
+        case 'SET_CURRENT_ITEM':
+            return {
+                ...state, currentItem: state.currentItem = action.payload.products.filter((item) => item.id === action.payload.currentId)
+            }
+        case 'SET_CURRENT_TAB':
+            return { ...state, currentItemTab: state.currentItemTab = action.payload }
         default:
 
             return state
