@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const products = useSelector(state => state.prdoucts.items)
@@ -9,9 +10,9 @@ const Header = () => {
       <div className="container">
         <div className="header__content">
           <div className="header__nav">
-            <div className="home--btn">
+            <Link to={'/'} className="home--btn">
               <img src="/home.svg" alt="home" />
-            </div>
+            </Link>
           </div>
           <div className="header__search">
             <div className="header__search--input">

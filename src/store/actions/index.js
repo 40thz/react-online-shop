@@ -12,3 +12,8 @@ export const SET_CURRENT_TAB = (any) => ({
     type: 'SET_CURRENT_TAB',
     payload: any
 })
+
+export const FITER_ITEMS = (arr) => ({
+    type: 'FITER_ITEMS',
+    payload: arr
+})
