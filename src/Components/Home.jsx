@@ -1,45 +1,51 @@
 import React from 'react'
 import Card from './Card'
 import Sidebar from './Sidebar'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 
 const Home = () => {
     const products = useSelector(state => state.prdoucts.items)
-    const [categoryName, SetCategoryName] = React.useState('Все товары')
-
+    const currentCategory = useSelector(state => state.category.currentCategory)
+    const categories = useSelector(state => state.category.categories)
+    const dispatch = useDispatch()
+    
     return (
         <div className="container">
             <div className="main__catalog">
-                <Sidebar SetCategoryName={SetCategoryName} items={[
+                <Sidebar items={[
                     {
                         name: 'Все товарры',
-                        category: 'all'
+                        type: 'btn'
                     },
                     {
                         name: 'Компьютеры',
-                        category: 0
-                    },
-                    {
-                        name: 'Ноутбуки',
                         category: 1
                     },
                     {
-                        name: 'Планшеты',
+                        name: 'Ноутбуки',
                         category: 2
                     },
                     {
-                        name: 'Телефоны',
+                        name: 'Планшеты',
                         category: 3
                     },
                     {
-                        name: 'Часы',
+                        name: 'Телефоны',
                         category: 4
+                    },
+                    {
+                        name: 'Часы',
+                        category: 5
+                    },
+                    {
+                        name: 'Микрофоны',
+                        category: 6
                     },
                 ]} />
 
                 <div className="catalog__content">
                     <div className="catalog__name">
-                        {categoryName}
+                        { currentCategory ? categories[currentCategory] : 'Все товары'}
                     </div>
                     <div className="catalog__products">
                         {products ? <Card /> : 'LOAD'}

@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 import Home from './Components/Home'
 import Product from './Components/Product/Product';
 import Header from './Components/Header';
-import { SET_PRODUCTS } from './store/actions'
+import { SET_PRODUCTS, SET_CATEGORIES } from './store/actions'
 
 function App() {
   const dispatch = useDispatch()
@@ -17,7 +17,10 @@ function App() {
       .then((response) => {
         return response.json();
       })
-      .then((data) => {dispatch(SET_PRODUCTS(data.items))});
+      .then((data) => {
+        dispatch(SET_PRODUCTS(data.items))
+        dispatch(SET_CATEGORIES(data.categories))
+      });
 
       document.title = 'Главаня страница - react-online-shop'
   })

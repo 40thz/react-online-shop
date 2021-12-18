@@ -16,19 +16,19 @@ const Product = () => {
     const params = useParams();
  
     React.useEffect(() => {
-        if (products) {
+        if (params.id && products) {
             const payload = {
                 products: products,
                 currentId: parseInt(params.id)
             }
             dispatch(SET_CURRENT_ITEM(payload))
+            document.title = currentItem.name
         } else {
             return
         }
-        if (currentItem) {
-            document.title = currentItem.name
-        }
     })
+
+    
     return (
         <Fragment>
             <div className="container">

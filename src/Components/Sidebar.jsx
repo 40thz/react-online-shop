@@ -1,29 +1,28 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { SET_CURRENT_TAB, FITER_ITEMS } from '../store/actions'
+import { SET_CURRENT_TAB } from '../store/actions'
 
-const Sidebar = ({ items, SetCategoryName }) => {
+const Sidebar = ({ items }) => {
     const dispatch = useDispatch()
-    const products = useSelector(state => state.prdoucts.items)
 
-    const setCategory = (obj) => {
-        const payload = {
-            products: products,
-            category: obj.category,
+    const redirect = (obj) => {
+        if(obj.type){
+            return '/'
+        }else if(obj.tab){
+            return ""
+        } else{
+            return `/category/${obj.category} `
         }
-        dispatch(FITER_ITEMS(payload))
-        SetCategoryName(obj.name)
     }
-
 
     return (
         <div className="main__sidebar">
             <nav>
                 {
                     items.map((item, i) => (
-                        <Link  key={i} to={item.tab  ? '' : `/category/${item.category}`}>
-                            <li onClick={() => item.tab ? dispatch(SET_CURRENT_TAB(item.tab)) : setCategory(item)} >
+                        <Link key={i} to={redirect(item)}>
+                            <li onClick={() => dispatch(SET_CURRENT_TAB(item.tab))} >
                                 {item.name}
                             </li>
                         </Link>
