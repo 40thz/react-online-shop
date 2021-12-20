@@ -139,8 +139,74 @@ textarea {
 .catalog__products {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  &-card {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+    border: solid 1px transparent;
+    background: #fff;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+    &-logo {
+      padding: 20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+
+      img {
+        width: 70%;
+      }
+    }
+    &-status {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &-right {
+      width: 150px;
+    }
+    &-price {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    &-info {
+      display: flex;
+      padding: 10px;
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-icon {
+      opacity: 0.7;
+      img {
+        width: 24px;
+      }
+      margin-right: 5px;
+    }
+    &-raiting {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      font-size: 12px;
+    }
+  }
 }
-.catalog__name{
+.header-search {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 0px 20px 0px;
+}
+.catalog__name {
   width: 100%;
   font-size: 16px;
   font-weight: bold;
@@ -687,9 +753,9 @@ div {
 .searchpopup__container {
   z-index: 9999;
   position: absolute;
-  top: 25px;
+  top: 22px;
   left: 5px;
-  width: 400px;
+  width: 60%;
   max-height: 465px;
   overflow: scroll;
   overflow-x: hidden;
@@ -699,28 +765,9 @@ div {
   .searchpopup__item {
     display: flex;
     align-items: center;
-    &--logo {
-      img {
-        width: 200px;
-      }
-    }
-    &--price {
-      padding: 10px 0px 10px 0px;
-    }
-    &--btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgb(255, 255, 255);
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
-      border: solid 1px transparent;
-      width: 100px;
-      span {
-        margin-right: 5px;
-      }
-    }
-    .searchpopup__rightside {
-      margin-left: 20px;
+    padding: 3px;
+    &:hover {
+      opacity: 0.6;
     }
   }
 }

@@ -7,7 +7,7 @@ function Buying({ currentItem }) {
     return (
         <div className="main__product--buying">
             <div className="main__product--buying-price">
-                {currentItem.price}
+                {currentItem.price} ₽
             </div>
             <div>
                 <div className="main__product--buying-btn">

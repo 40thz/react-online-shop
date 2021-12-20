@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { SET_CURRENT_TAB } from '../store/actions'
+import { SET_CURRENT_TAB, SET_CURRENT_CATEGORY } from '../store/actions'
 
 const Sidebar = ({ items }) => {
     const dispatch = useDispatch()
@@ -22,7 +22,7 @@ const Sidebar = ({ items }) => {
                 {
                     items.map((item, i) => (
                         <Link key={i} to={redirect(item)}>
-                            <li onClick={() => dispatch(SET_CURRENT_TAB(item.tab))} >
+                            <li onClick={() => item.type ? dispatch(SET_CURRENT_CATEGORY()) : dispatch(SET_CURRENT_TAB(item.tab))} >
                                 {item.name}
                             </li>
                         </Link>

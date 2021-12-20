@@ -1,21 +1,22 @@
 import React from 'react'
 import Card from './Card'
 import Sidebar from './Sidebar'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const Home = () => {
     const products = useSelector(state => state.prdoucts.items)
     const currentCategory = useSelector(state => state.category.currentCategory)
     const categories = useSelector(state => state.category.categories)
-    const dispatch = useDispatch()
-    
+    React.useEffect(() => {
+        document.title = 'Главаня страница - react-online-shop'
+    })
     return (
         <div className="container">
             <div className="main__catalog">
                 <Sidebar items={[
                     {
                         name: 'Все товарры',
-                        type: 'btn'
+                        type: 'all'
                     },
                     {
                         name: 'Компьютеры',
@@ -41,11 +42,12 @@ const Home = () => {
                         name: 'Микрофоны',
                         category: 6
                     },
-                ]} />
+                ]
+                } />
 
                 <div className="catalog__content">
                     <div className="catalog__name">
-                        { currentCategory ? categories[currentCategory] : 'Все товары'}
+                        {currentCategory ? categories[currentCategory] : 'Все товары'}
                     </div>
                     <div className="catalog__products">
                         {products ? <Card /> : 'LOAD'}

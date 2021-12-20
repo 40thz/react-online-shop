@@ -22,11 +22,19 @@ export const SET_CATEGORIES = (arr) => ({
     type: 'SET_CATEGORIES',
     payload: arr
 })
+
 export const SET_CURRENT_CATEGORY = (number) => ({
     type: 'SET_CURRENT_CATEGORY',
     payload: number
 })
+
 export const FITER_ITEMS_REMOVE = (number) => ({
     type: 'FITER_ITEMS_REMOVE',
     payload: number
 })
+
+export const SET_SEARCH_PRODUCTS = (arr) => ({
+    type: 'SET_SEARCH_PRODUCTS',
+    payload: arr
+})
+

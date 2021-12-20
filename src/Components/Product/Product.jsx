@@ -8,27 +8,29 @@ import { useParams } from "react-router-dom";
 import Specs from './Specs'
 
 const Product = () => {
-    
+
     const dispatch = useDispatch()
     const products = useSelector(state => state.prdoucts.items)
     const currentItem = useSelector(state => state.prdoucts.currentItem[0])
     const currentTab = useSelector(state => state.prdoucts.currentItemTab)
     const params = useParams();
- 
+
     React.useEffect(() => {
-        if (params.id && products) {
+        if (products) {
             const payload = {
                 products: products,
                 currentId: parseInt(params.id)
             }
             dispatch(SET_CURRENT_ITEM(payload))
-            document.title = currentItem.name
         } else {
             return
         }
+        if (currentItem) {
+            document.title = currentItem.name
+        }
     })
 
-    
+
     return (
         <Fragment>
             <div className="container">

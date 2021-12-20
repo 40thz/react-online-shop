@@ -4,10 +4,10 @@ import { Link, useParams } from 'react-router-dom'
 import { SET_CURRENT_CATEGORY, SET_CURRENT_TAB } from '../store/actions'
 
 const Card = () => {
+    
     const defaultIems = useSelector(state => state.prdoucts.items)
-    const dispatch = useDispatch()
     const [products, setProducts] = React.useState(defaultIems)
-
+    const dispatch = useDispatch()
     const params = useParams();
 
     React.useEffect(() => {
@@ -35,7 +35,7 @@ const Card = () => {
                             <Link to={`/product/${item.id}`} className="card__bottom--name">
                                 {item.name}
                             </Link>
-                            <div className="card__bottom--price">{item.price}</div>
+                            <div className="card__bottom--price">{item.price} ₽</div>
                         </div>
                         <div className="card__bottom--rightSide">
                             <div className="card__bottom--btn"><img src="/shopping-cart.svg" alt="" /></div>
