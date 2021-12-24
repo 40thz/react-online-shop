@@ -1,5 +1,6 @@
 const initialState = {
     items: [],
+    reservItems: [],
 }
 
 const searchReducer = (state = initialState, action) => {
@@ -9,6 +10,8 @@ const searchReducer = (state = initialState, action) => {
 
         case 'SET_SEARCH_PRODUCTS':
             return { ...state, items: state.items = action.payload }
+        case 'SET_RESERV':
+            return { ...state, reservItems: state.reservItems = action.payload }
         default:
 
             return state

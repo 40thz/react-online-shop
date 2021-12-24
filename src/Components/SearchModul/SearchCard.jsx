@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 const SearchCard = () => {
     const items = useSelector(state => state.search.items)
-
     return (
         <Fragment>
             {items.map((item) => (
@@ -21,7 +20,7 @@ const SearchCard = () => {
                                 <div className="catalog__products-card-icon">
                                     <img src="/rate-svgrepo-com.svg" alt="" />
                                 </div>
-                                <span>432</span>
+                                <span>{item.raiting}</span>
                             </div>
                             <div className="catalog__products-card-raiting">
                                 <div className="catalog__products-card-icon">

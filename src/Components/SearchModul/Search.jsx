@@ -2,7 +2,7 @@ import React from 'react'
 import SearchedItem from './SearchedItem'
 import HeaderBtn from '../HeaderBtn'
 import { useSelector, useDispatch } from 'react-redux'
-import { SET_SEARCH_PRODUCTS } from '../../store/actions'
+import { SET_RESERV, SET_SEARCH_PRODUCTS } from '../../store/actions'
 import { useNavigate } from 'react-router-dom'
 
 const Search = () => {
@@ -39,10 +39,11 @@ const Search = () => {
         setValue(e.target.value)
         setActive(true)
         const filtering = products.filter((item) => {
-            return item.name.toLowerCase().includes(e.target.value.toLowerCase());
+                return item.name.toLowerCase().includes(e.target.value.toLowerCase());
         })
-
         dispatch(SET_SEARCH_PRODUCTS(filtering))
+        dispatch(SET_RESERV(filtering))
+        
     }
 
     return (

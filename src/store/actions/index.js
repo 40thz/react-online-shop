@@ -37,4 +37,9 @@ export const SET_SEARCH_PRODUCTS = (arr) => ({
     type: 'SET_SEARCH_PRODUCTS',
     payload: arr
 })
+export const SET_RESERV = (arr) => ({
+    type: 'SET_RESERV',
+    payload: arr
+})
+
 

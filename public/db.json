@@ -7,6 +7,9 @@
       "price": 79799,
       "description": "15.6 Ноутбук ASUS TUF Gaming FX506LH-HN004 выполнен в строгом игровым дизайном с декоративными элементами и необычной конструкцией. Благодаря большим петлям и высокой нижней рамке экрана обеспечивается удобное расположение дисплея непосредственно на уровне глаз, что поможет в полной мере насладиться геймплеем вне зависимости от того, где вы находитесь. Для большего удобства использования предусмотрена подсветка клавиш. Корпус модели выполнен из прочного пластика, за счет чего устройство отличается высокой надежностью. Ноутбук ASUS TUF Gaming FX506LH-HN004 оснащен матовым экраном на 15.6 с IPS-матрицей. Благодаря этому, а также разрешению 1920x1080 пикселей и развертке 144 Гц обеспечивается четкое и плавное изображение с естественными цветами и широкими углами обзора. В основе ноутбука используется 4-ядерный процессор Intel Core i5 10300H, что вкупе с видеокартой NVIDIA GeForce GTX 1650 обеспечит высокую эффективность работы в профессиональных приложениях и комфортную игру на высоких или максимальных настройках графики. Объем ОЗУ составляет 8 ГБ, для постоянного хранения файлов предусмотрен SSD-диск на 512 ГБ. Модель также отличается широкими возможностями подключения периферии за счет множества портов на корпусе, для беспроводного соединения используется Wi-Fi и Bluetooth.",
       "category": 4,
+      "raiting": 3.4,
+      "brand": "Apple",
+      "overview": true,
       "specification": {
         "images": [
           "https://picsum.photos/id/1018/1000/600/",
@@ -43,6 +46,9 @@
       "price": 12999,
       "description": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 1,
+      "raiting": 2.6,
+      "brand": "DEXP",
+      "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -80,6 +86,9 @@
       "price": 19999,
       "description": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 3,
+      "raiting": 6.8,
+      "brand": "Lenovo",
+      "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -117,6 +126,9 @@
       "price": 22999,
       "description": "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 1,
+      "raiting": 9.4,
+      "brand": "DEXP",
+      "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -154,6 +166,9 @@
       "price": 104999,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 2,
+      "raiting": 7.4,
+      "brand": "Apple",
+      "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -191,6 +206,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 2,
+      "raiting": 3.9,
+      "brand": "ASUS",
+      "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -228,6 +246,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 2,
+      "raiting": 8.4,
+      "brand": "MSI",
+      "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -265,6 +286,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 7.5,
+     "brand": "Apple",
+     "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -302,6 +326,9 @@
       "price": 23799,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 5.8,
+     "brand": "Apple",
+     "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -339,6 +366,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 2,
+      "raiting": 9.3,
+      "brand": "MSI",
+      "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -376,6 +406,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 8.3,
+     "brand": "Apple",
+     "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -413,6 +446,9 @@
       "price": 23799,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 7.3,
+     "brand": "Apple",
+     "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -450,6 +486,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "category": 2,
+      "raiting": 8.9,
+      "brand": "MSI",
+      "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -487,6 +526,9 @@
       "price": 1500,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 5.4,
+     "brand": "Apple",
+     "overview": true,
       "specification": {
         "screenType": "IPSs",
         "images": [
@@ -524,6 +566,9 @@
       "price": 23799,
       "description": "5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
      "category": 5,
+     "raiting": 4.4,
+     "brand": "Apple",
+     "overview": false,
       "specification": {
         "screenType": "IPSs",
         "images": [
