@@ -28,36 +28,48 @@ const Search = () => {
         return () => document.removeEventListener('click', handleClick)
     }, [])
 
-    const handleKeyUp = (e) => {
-        if (e.key === 'Enter') {
-            navigate(`/search/${value}`)
-            clearSeacrh()
+    const filterItems = (e) => {
+        setValue(e.target.value)
+
+        if (e.target.value.length) {
+            setActive(true)
+            const filtering = products.filter((item) => {
+                return item.name.toLowerCase().includes(e.target.value.toLowerCase());
+            })
+            dispatch(SET_SEARCH_PRODUCTS(filtering))
+            dispatch(SET_RESERV(filtering))
+        } else {
+            setActive(false)
+            return
         }
     }
 
-    const filterItems = (e) => {
-        setValue(e.target.value)
-        setActive(true)
-        const filtering = products.filter((item) => {
-                return item.name.toLowerCase().includes(e.target.value.toLowerCase());
-        })
-        dispatch(SET_SEARCH_PRODUCTS(filtering))
-        dispatch(SET_RESERV(filtering))
-        
+    const handleSubmit = (e) => {
+        e.preventDefault()
+      
+        if (value) {
+            navigate(`/search/${value}`)
+            setActive(false)
+        } else {
+            return
+        }
     }
 
     return (
-        <div className="header__search">
+        <form onSubmit={handleSubmit} className="header__search">
             <div className="header__search--input">
-                <input onKeyUp={(e) => handleKeyUp(e)} onChange={(e) => filterItems(e)} type="text" />
-                <HeaderBtn value={value} icon={`/search-svgrepo-com.svg`} />
+                <input onChange={(e) => filterItems(e)} type="text" />
+                <HeaderBtn icon={`/search-svgrepo-com.svg`}>
+                 <input type="submit" />
+                </HeaderBtn>
+
             </div>
             {active &&
                 <div ref={ref} className='searchpopup__container'>
                     <SearchedItem clearSeacrh={clearSeacrh} />
                 </div>
             }
-        </div>
+        </form>
     )
 }
 

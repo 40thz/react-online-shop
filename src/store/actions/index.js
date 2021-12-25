@@ -42,4 +42,17 @@ export const SET_RESERV = (arr) => ({
     payload: arr
 })
 
+export const SET_BASKET_PRDOUCT = (arr) => ({
+    type: 'SET_BASKET_PRDOUCT',
+    payload: arr
+})
 
+export const TOGGLE_BASKET = (boolean) => ({
+    type: 'TOGGLE_BASKET',
+    payload: boolean
+})
+
+export const REMOVE_BASKET_PRODUCT = (arr) => ({
+    type: 'REMOVE_BASKET_PRODUCT',
+    payload: arr
+})

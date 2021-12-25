@@ -136,11 +136,11 @@ textarea {
       text-align: center;
     }
   }
-  .icon{
+  .icon {
     margin-right: 5px;
     opacity: 0.6;
     height: 12px;
-    img{
+    img {
       width: 14px;
     }
   }
@@ -319,15 +319,14 @@ div {
   }
 }
 .header__nav {
-  width: 30%;
-  margin-right: 35px;
+  width: 25%;
 }
 .header__search {
   position: relative;
   display: flex;
   align-items: center;
   margin-top: 3px;
-  width: 100%;
+  width: 60%;
   &--btn {
     border: solid 1px transparent;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
@@ -335,12 +334,13 @@ div {
     box-sizing: border-box;
     padding: 5px 5px 0px 5px;
     margin-left: 15px;
+    width: 30px;
     &:hover {
       background-color: rgb(240, 240, 240);
     }
-  }
-  img {
-    width: 15px;
+    img {
+      width: 15px;
+    }
   }
   &--input {
     display: flex;
@@ -829,4 +829,96 @@ div {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.videoplayer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 50px;
+}
+.overview_name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.basket__container {
+  z-index: 999;
+  position: relative;
+  .basket {
+    position: absolute;
+    right: 30%;
+    top: 30px;
+    width: 450px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%);
+    border-radius: 11px;
+    padding: 16px 12px;
+    min-height: 140px;
+    background-color: #fff;
+    &--header{
+      display: flex; justify-content: space-between;
+      font-size: 14px;
+      margin-bottom: 20px;
+      &-title{
+        font-weight: bold;
+      }
+    }
+    &--content{
+      &-card{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &-leftSide{
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+        }
+        &-logo{
+          width: 50px;
+          margin-right: 10px;
+          img{
+            width: 100%;
+          }
+        }
+        &-removeBtn{
+          cursor: pointer;
+          width: 20px;
+          margin-left: 5px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    &--footer{
+      &-sum{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      &-btns{
+        display: flex;
+        justify-content: flex-end;
+      }
+      &-btn{
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        background: #fff;
+        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
+        border: solid 1px transparent;
+        padding: 15px 10px;
+        width: auto;
+        text-align: center;
+        &:last-child{
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+
 }

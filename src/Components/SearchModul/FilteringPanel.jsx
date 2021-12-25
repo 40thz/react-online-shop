@@ -30,7 +30,7 @@ const FilteringPanel = () => {
             
             if (searchParams.has('raiting')) filteringItems = filteringItems && item.raiting > 4;
             
-            if (searchParams.has('overview')) filteringItems = filteringItems && item.overview;
+            if (searchParams.has('overview')) filteringItems = filteringItems && item.overview.length;
             
             if (searchParams.has('brands')) {
                 brandsInput.current.map((item) => {
@@ -58,7 +58,7 @@ const FilteringPanel = () => {
         if (raitingCheck) params.raiting = true
         if (overviewCheck) params.overview = true
         if (brandQuery.length) params.brands = brandQuery
-
+  
         setSearchParams(params);
         setStartFiltering(!startFiltering)
 

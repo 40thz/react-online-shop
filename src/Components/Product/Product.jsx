@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { SET_CURRENT_ITEM } from '../../store/actions'
 import { useParams } from "react-router-dom";
 import Specs from './Specs'
+import Overview from './Overview'
 
 const Product = () => {
 
@@ -54,7 +55,7 @@ const Product = () => {
                                     },
                                     {
                                         name: 'Обзоры',
-                                        tab: 'обзоры'
+                                        tab: <Overview />
                                     },
                                     {
                                         name: 'Отзывы',

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
-import { SET_CURRENT_CATEGORY, SET_CURRENT_TAB } from '../store/actions'
+import { SET_CURRENT_CATEGORY, SET_CURRENT_TAB, SET_BASKET_PRDOUCT, TOGGLE_BASKET } from '../store/actions'
 
 const Card = () => {
     
@@ -21,6 +21,10 @@ const Card = () => {
         dispatch(SET_CURRENT_TAB())
     }, [params.categoryId])
 
+    const addInBasket = (item) => {
+        dispatch(SET_BASKET_PRDOUCT(item))
+        dispatch(TOGGLE_BASKET(true))
+    }
     return (
         <Fragment>
             {products.map((item, i) => (
@@ -38,7 +42,7 @@ const Card = () => {
                             <div className="card__bottom--price">{item.price} ₽</div>
                         </div>
                         <div className="card__bottom--rightSide">
-                            <div className="card__bottom--btn"><img src="/shopping-cart.svg" alt="" /></div>
+                            <div onClick={() => addInBasket(item)} className="card__bottom--btn"><img src="/shopping-cart.svg" alt="" /></div>
                         </div>
                     </div>
                 </div>

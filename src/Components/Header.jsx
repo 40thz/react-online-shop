@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Basket from './Basket/Basket'
 import Search from './SearchModul/Search'
 
 const Header = () => {
@@ -14,6 +15,7 @@ const Header = () => {
             </Link>
           </div>
           <Search />
+          <Basket />
         </div>
       </div>
     </div>
