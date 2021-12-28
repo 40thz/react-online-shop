@@ -9,6 +9,7 @@ import Product from './Components/Product/Product';
 import Header from './Components/Header';
 import { SET_PRODUCTS, SET_CATEGORIES } from './store/actions'
 import SearchProduct from './Components/SearchModul/SearchProduct';
+import BasketPage from './Components/Basket/BasketPage';
 
 function App() {
   const dispatch = useDispatch()
@@ -32,6 +33,7 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/category/:categoryId" element={<Home />} />
         <Route path="/search/:nameProduct" element={<SearchProduct />} />
+        <Route path="/basket" element={<BasketPage />} />
       </Routes>
     </div>
   );

@@ -1,8 +1,9 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import HeaderBtn from '../HeaderBtn'
-import { TOGGLE_BASKET } from '../../store/actions'
+import { TOGGLE_BASKET, REMOVE_BASKET_PRODUCT } from '../../store/actions'
 import BasketCard from './BasketCard'
+import { Link } from 'react-router-dom'
 
 const Basket = () => {
     const dispatch = useDispatch()
@@ -24,10 +25,13 @@ const Basket = () => {
         }
         setSum(sum)
 
-
-
         document.body.addEventListener('click', handleClick)
+        return document.body.addEventListener('click', handleClick)
     }, [basketArray])
+
+    const clearBasket = () => {
+        dispatch(REMOVE_BASKET_PRODUCT([]))
+    }
 
     return (
         <div ref={basketContainer} className='basket__container'>
@@ -38,9 +42,9 @@ const Basket = () => {
                 <div className="basket">
                     <div className="basket--header">
                         <div className="basket--header-title">
-                            Основные товары (1)
+                            Основные товары ({basketArray.length ? basketArray.length : '0'})
                         </div>
-                        <div className="basket--header-clearBasket">
+                        <div onClick={() => clearBasket()} className="basket--header-clearBasket">
                             Очистить список
                         </div>
                     </div>
@@ -60,9 +64,11 @@ const Basket = () => {
                             <div className="basket--footer-btn">
                                 Оформить заказ
                             </div>
-                            <div className="basket--footer-btn">
-                                В корзину
-                            </div>
+                            <Link onClick={() => dispatch(TOGGLE_BASKET(false))} to={'/basket'}>
+                                <div className="basket--footer-btn">
+                                    В корзину
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

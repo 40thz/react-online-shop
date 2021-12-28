@@ -56,3 +56,13 @@ export const REMOVE_BASKET_PRODUCT = (arr) => ({
     type: 'REMOVE_BASKET_PRODUCT',
     payload: arr
 })
+
+export const PLUS_SIZE = (str) => ({
+    type: 'PLUS_SIZE',
+    payload: str
+})
+
+export const MINUS_SIZE = (str) => ({
+    type: 'MINUS_SIZE',
+    payload: str
+})

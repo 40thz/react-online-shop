@@ -1,15 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const HeaderBtn = ({ icon, value }) => {
-
+const navigate = useNavigate();
 
     return (
-        <Link to={value ? `/search/${value}` : ''}>
-            <div className="header__search--btn">
+            <div onClick={() => navigate(value ? `/search/${value}` : false)} className="header__search--btn">
                 <img src={icon} alt="btn" />
             </div>
-        </Link>
     )
 }
 

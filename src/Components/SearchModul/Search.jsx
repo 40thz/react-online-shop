@@ -59,7 +59,7 @@ const Search = () => {
         <form onSubmit={handleSubmit} className="header__search">
             <div className="header__search--input">
                 <input onChange={(e) => filterItems(e)} type="text" />
-                <HeaderBtn icon={`/search-svgrepo-com.svg`}>
+                <HeaderBtn value={value} icon={`/search-svgrepo-com.svg`}>
                  <input type="submit" />
                 </HeaderBtn>
 
