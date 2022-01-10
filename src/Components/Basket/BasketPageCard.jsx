@@ -1,16 +1,18 @@
 import React, { Fragment } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { REMOVE_BASKET_PRODUCT } from '../../store/actions'
+import { REMOVE_BASKET_PRODUCT, SET_FAVOURITE_PRDOUCT, REMOVE_FAVOURITE_PRODUCT } from '../../store/actions'
+import { addIn } from '../addIn'
 import SizeBtn from './SizeBtn'
 
 const BasketPageCard = () => {
 
     const dispatch = useDispatch()
     const basketArray = useSelector(state => state.basket.basketItems)
+    const favouriteArray = useSelector(state => state.favourites.favouriteItems)
 
-    const removeProduct = (id) => {
-        const array = basketArray.filter((item) => item.id !== id);
-        dispatch(REMOVE_BASKET_PRODUCT(array))
+    const removeProduct = (type, array, id) => {
+        const filtering = array.filter((item) => item.id !== id);
+        dispatch(type(filtering))
     }
     return (
         <Fragment>
@@ -24,10 +26,10 @@ const BasketPageCard = () => {
                             {item.name}
                         </div>
                         <div className="catalog__products-card-info">
-                            <div className="catalog__products-card-raiting">
-                                В избранное
+                            <div onClick={() => favouriteArray.some(prod => prod.id === item.id) ? removeProduct(REMOVE_FAVOURITE_PRODUCT, favouriteArray, item.id) : addIn(item, favouriteArray, dispatch, SET_FAVOURITE_PRDOUCT)} className="catalog__products-card-raiting">
+                                {favouriteArray.some(prod => prod.id === item.id) ? <span style={{ color: '#1875f0' }}>В избранное</span> : "В избранное"}
                             </div>
-                            <div onClick={() => removeProduct(item.id)} className="catalog__products-card-raiting">
+                            <div onClick={() => removeProduct(REMOVE_BASKET_PRODUCT, basketArray, item.id)} className="catalog__products-card-raiting">
                                 Удалить
                             </div>
                         </div>

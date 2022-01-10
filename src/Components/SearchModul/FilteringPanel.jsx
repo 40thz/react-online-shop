@@ -65,7 +65,7 @@ const FilteringPanel = () => {
     }
 
     return (
-        <div className="main__sidebar">
+        <nav className="main__content__sidebar__navigation">
             <form onSubmit={handleSubmit}>
                 <InputChecked inputs={[
                     {
@@ -89,7 +89,7 @@ const FilteringPanel = () => {
             </form>
 
 
-        </div>
+        </nav>
     )
 }
 

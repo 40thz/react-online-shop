@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
 const InputChecked = ({ inputs }) => {
-    console.log(inputs)
+
     return (
         <Fragment>
             {inputs.map((input, i) => (

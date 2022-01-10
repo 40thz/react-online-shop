@@ -2,7 +2,7 @@ const initialState = {
     items: false,
     filterItems: [],
     currentItem: {},
-    currentItemTab: false
+    dbRefresh: false,
 }
 
 const productsReducer = (state = initialState, action) => {
@@ -14,8 +14,8 @@ const productsReducer = (state = initialState, action) => {
             return { ...state, items: state.items = action.payload }
         case 'SET_CURRENT_ITEM':
             return { ...state, currentItem: state.currentItem = action.payload.products.filter((item) => item.id === action.payload.currentId) }
-        case 'SET_CURRENT_TAB':
-            return { ...state, currentItemTab: state.currentItemTab = action.payload }
+        case 'DB_REFRESH':
+            return { ...state, dbRefresh: state.dbRefresh = action.payload }
         default:
 
             return state

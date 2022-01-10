@@ -1,6 +1,6 @@
 const initialState = {
     categories: [],
-    currentCategory: 0
+    currentCategory: null
 }
 
 const categoryReducer = (state = initialState, action) => {

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useSelector } from 'react-redux'
+import Header from '../Header'
 import BasketPageCard from './BasketPageCard'
 
 const BasketPage = () => {
@@ -16,18 +17,20 @@ const BasketPage = () => {
         setPrice(sum)
     }, [basketArray])
     return (
-        <div className="basket__page">
+      <Fragment>
+          <Header />
+            <div className="basket__page">
             <div className="container">
                 <div className="main__catalog">
                     <div className="catalog__content">
                         <div className="catalog__name">
-                            Корзина <span>1 товар</span>
+                            Корзина: <span>{basketArray.length} товара</span>
                         </div>
                         <div className="catalog__products">
                             <BasketPageCard />
                         </div>
                     </div>
-                    <div className="main__sidebar">
+                    <div className="basket__sum">
                         <nav>
                             <li>
                                 Итого: {basketArray.length} товар на {price} ₽
@@ -37,6 +40,7 @@ const BasketPage = () => {
                 </div>
             </div>
         </div>
+      </Fragment>
     )
 }
 

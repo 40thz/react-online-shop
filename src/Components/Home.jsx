@@ -1,60 +1,50 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Card from './Card'
 import Sidebar from './Sidebar'
 import { useSelector } from 'react-redux'
+import Header from './Header'
+import Carousel from './Carousel'
 
 const Home = () => {
     const products = useSelector(state => state.prdoucts.items)
     const currentCategory = useSelector(state => state.category.currentCategory)
     const categories = useSelector(state => state.category.categories)
+
     React.useEffect(() => {
         document.title = 'Главаня страница - react-online-shop'
     })
     return (
-        <div className="container">
-            <div className="main__catalog">
-                <Sidebar items={[
-                    {
-                        name: 'Все товарры',
-                        type: 'all'
-                    },
-                    {
-                        name: 'Компьютеры',
-                        category: 1
-                    },
-                    {
-                        name: 'Ноутбуки',
-                        category: 2
-                    },
-                    {
-                        name: 'Планшеты',
-                        category: 3
-                    },
-                    {
-                        name: 'Телефоны',
-                        category: 4
-                    },
-                    {
-                        name: 'Часы',
-                        category: 5
-                    },
-                    {
-                        name: 'Микрофоны',
-                        category: 6
-                    },
-                ]
-                } />
+        <Fragment>
+            <Header />
+            <Carousel />
+            <div className="container">
+                <div className="main__content">
+                    <div className="main__content__sidebar">
+                        <Sidebar
+                            items={
+                                categories.map((item, i) => (
+                                    {
+                                        name: item.name,
+                                        icon: item.icon,
+                                        category: i
+                                    }
+                                ))
 
-                <div className="catalog__content">
-                    <div className="catalog__name">
-                        {currentCategory ? categories[currentCategory] : 'Все товары'}
+                            } />
                     </div>
-                    <div className="catalog__products">
-                        {products ? <Card /> : 'LOAD'}
+                    <div className="main__content__catalog">
+                        <div className="main__content__catalog__board">
+                            <nav className="main__content__catalog__board__nav">
+                                <li><a className="nav__active" href="#"> { currentCategory === null ? 'Все товары' : categories[currentCategory].name}</a></li>
+                            </nav>
+                        </div>
+                        <div className="main__content__catalog__items">
+                            {products ? <Card /> : 'LOAD'}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
 

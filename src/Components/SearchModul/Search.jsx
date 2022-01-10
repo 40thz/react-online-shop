@@ -46,7 +46,7 @@ const Search = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-      
+
         if (value) {
             navigate(`/search/${value}`)
             setActive(false)
@@ -56,13 +56,15 @@ const Search = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="header__search">
-            <div className="header__search--input">
-                <input onChange={(e) => filterItems(e)} type="text" />
-                <HeaderBtn value={value} icon={`/search-svgrepo-com.svg`}>
-                 <input type="submit" />
-                </HeaderBtn>
-
+        <form onSubmit={handleSubmit} className="header__panel__search">
+            <div className="header__panel__search__input">
+                <input onChange={(e) => filterItems(e)} type="text" placeholder="Поиск товаров" />
+            </div>
+            <div className="header__panel__search__btn">
+            <div onClick={() => navigate(value ? `/search/${value}` : false)} className="header__panel__search__btn">
+            <img src='/search icon.jpg' alt="btn" />
+            <input type="submit" value="" />
+        </div>
             </div>
             {active &&
                 <div ref={ref} className='searchpopup__container'>

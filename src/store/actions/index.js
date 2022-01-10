@@ -66,3 +66,23 @@ export const MINUS_SIZE = (str) => ({
     type: 'MINUS_SIZE',
     payload: str
 })
+
+export const SET_FAVOURITE_PRDOUCT = (obj) => ({
+    type: 'SET_FAVOURITE_PRDOUCT',
+    payload: obj
+})
+
+export const REMOVE_FAVOURITE_PRODUCT = (arr) => ({
+    type: 'REMOVE_FAVOURITE_PRODUCT',
+    payload: arr
+})
+
+export const TOGGLE_FAVOURITE = (boolean) => ({
+    type: 'TOGGLE_FAVOURITE',
+    payload: boolean
+})
+
+export const DB_REFRESH = (boolean) => ({
+    type: 'DB_REFRESH',
+    payload: boolean
+})

@@ -18,9 +18,9 @@ const basketReducer = (state = initialState, action) => {
         case 'PLUS_SIZE':
             return {
                 ...state, basketItems: state.basketItems = state.basketItems.map(card => {
-                    if (card.id === action.payload) {
+                    if (card.id === action.payload.id) {
                         card.size++
-                        card.price = card.price * 2
+                        card.price = card.price + action.payload.defPrice
                     }
                     return card
                 })
@@ -28,8 +28,8 @@ const basketReducer = (state = initialState, action) => {
             case 'MINUS_SIZE':
             return {
                 ...state, basketItems: state.basketItems = state.basketItems.map(card => {
-                    if (card.id === action.payload) {
-                        card.price = card.price / 2
+                    if (card.id === action.payload.id) {
+                        card.price = card.price - action.payload.defPrice
                         card.size--
                     }
                     return card

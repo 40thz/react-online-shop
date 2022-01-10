@@ -7,13 +7,15 @@ import { SET_CURRENT_ITEM } from '../../store/actions'
 import { useParams } from "react-router-dom";
 import Specs from './Specs'
 import Overview from './Overview'
+import Header from '../Header'
+import Descriptions from './Descriptions'
+import Comments from './Comments'
 
 const Product = () => {
 
     const dispatch = useDispatch()
     const products = useSelector(state => state.prdoucts.items)
     const currentItem = useSelector(state => state.prdoucts.currentItem[0])
-    const currentTab = useSelector(state => state.prdoucts.currentItemTab)
     const params = useParams();
 
     React.useEffect(() => {
@@ -34,6 +36,7 @@ const Product = () => {
 
     return (
         <Fragment>
+            <Header />
             <div className="container">
                 {currentItem ?
 
@@ -42,32 +45,40 @@ const Product = () => {
                             <Slider currentItem={currentItem} />
                             <Buying currentItem={currentItem} />
                         </div>
-                        <div className="main__product--spec">
-                            <Sidebar items={
-                                [
-                                    {
-                                        name: 'Описание',
-                                        tab: currentItem.description
-                                    },
-                                    {
-                                        name: 'Характеристики',
-                                        tab: <Specs />
-                                    },
-                                    {
-                                        name: 'Обзоры',
-                                        tab: <Overview />
-                                    },
-                                    {
-                                        name: 'Отзывы',
-                                        tab: 'отзывы'
-                                    }
-                                ]
+                        <div className="container">
+                            <div className="main__content">
+                                <div className="main__content__sidebar">
+                                    <Sidebar items={
+                                        [
+                                            {
+                                                name: 'Описание',
+                                                to: 'description'
+                                            },
+                                            {
+                                                name: 'Характеристики',
+                                                to: 'specification'
+                                            },
+                                            {
+                                                name: 'Обзоры',
+                                                to: 'overview'
+                                            },
+                                            {
+                                                name: 'Отзывы',
+                                                to: 'comments'
+                                            }
+                                        ]
 
-                            } />
-                            <div className="main__product--more">
-                                {currentTab ? currentTab : currentItem.description}
+                                    } />
+                                </div>
+                                <div className="main__content__catalog">
+                                    <Descriptions currentItem={currentItem} />
+                                    <Specs />
+                                    <Overview />
+                                    <Comments />
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     : 'LOAD'}
             </div>

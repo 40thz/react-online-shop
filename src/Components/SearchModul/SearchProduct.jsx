@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { SET_RESERV, SET_SEARCH_PRODUCTS } from '../../store/actions'
 import FilteringPanel from './FilteringPanel';
 import SearchCard from './SearchCard';
+import Header from '../Header';
 
 const SearchProduct = () => {
     const params = useParams();
@@ -21,29 +22,32 @@ const SearchProduct = () => {
     React.useEffect(() => {
         if (products) {
             filterItems()
-
         }
         document.title = `Поиск товаров`
+        console.log(items)
     }, [products])
 
     return (
-        <div className="container">
-            <div className="header-search">
-                    <span className='header-search'>Найдено: {items.length >= 1 ? items.length : "нет"} {items.length >= 9 ? 'товаров': 'товара'}</span>
-            </div>
-            <div className="main__catalog">
-                <FilteringPanel />
-                
-                <div className="catalog__content">
-                    <div className="catalog__name">
-                        Вы искали: {params.nameProduct}
+        <Fragment>
+            <Header />
+            <div className="container">
+                <div className="main__content">
+                    <div className="main__content__sidebar">
+                        <FilteringPanel />
                     </div>
-                    <div className="catalog__products">
-                        {items.length >= 1 ? <SearchCard /> : 'Товаров не найдено'}
+                    <div className="main__content__catalog">
+                        <div className="main__content__catalog__board">
+                            <nav className="main__content__catalog__board__nav">
+                                <li><a className="nav__active" href="#">  Вы искали: {items.length && items[0].name.split(" ")[0]}</a></li>
+                            </nav>
+                        </div>
+                        <div className="main__content__catalog__items">
+                            {items.length >= 1 ? <SearchCard /> : 'Товаров не найдено'}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Fragment >
     )
 }
 

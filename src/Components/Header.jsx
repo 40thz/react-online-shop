@@ -1,24 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Basket from './Basket/Basket'
+import HeaderList from './HeaderList'
+import HeaderNav from './HeaderNav'
 import Search from './SearchModul/Search'
 
 const Header = () => {
 
   return (
-    <div className="header">
-      <div className="container">
-        <div className="header__content">
-          <div className="header__nav">
-            <Link to={'/'} className="home--btn">
-              <img src="/home.svg" alt="home" />
-            </Link>
+    <header>
+      <div className="header__body">
+        <div className="container">
+          <div className="header__panel">
+            <div className="header__panel__logo">
+              <Link to={'/'}>
+                REACT ONLINE SHOP
+              </Link>
+            </div>
+            <Search />
+            <HeaderList />
+            {/* <Basket />*/}
           </div>
-          <Search />
-          <Basket />
         </div>
       </div>
-    </div>
+      <HeaderNav />
+    </header>
   )
 }
 
