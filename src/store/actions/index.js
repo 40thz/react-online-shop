@@ -86,3 +86,17 @@ export const DB_REFRESH = (boolean) => ({
     type: 'DB_REFRESH',
     payload: boolean
 })
+
+export const SET_USER = (obj) => ({
+    type: 'SET_USER',
+    payload: obj
+})
+
+export const REMOVE_USER = () => ({
+    type: 'SET_USER'
+})
+
+export const SET_COMMENT = (arr) => ({
+    type: 'SET_COMMENT',
+    payload: arr
+})

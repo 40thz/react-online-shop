@@ -425,6 +425,7 @@ header {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    width: 100%;
     .main__content-title {
         font-size: 20px;
         opacity: 0.6;
@@ -441,7 +442,7 @@ header {
                 li {
                     display: flex;
                     align-items: center;
-                    height: 50px;
+                    padding: 10px 0px;
                 }
                 .filterPanel__company {
                     padding-bottom: 20px;
@@ -475,20 +476,20 @@ header {
                 background-color: rgb(255, 255, 255);
                 border-bottom: 2px solid #f0f0f0;
                 width: 250px;
-                p {
+                .content__list {
                     display: flex;
                     align-items: center;
                     font-size: 13px;
                     font-weight: 400;
                     color: #808080;
-                    padding: 0px 10px 0px 10px;
-                    width: 190px;
-                    .logo__list{
+                    padding: 10px;
+                    width: 250px;
+                    .logo__list {
                         width: 20px;
                         img {
                             width: 100%;
-                            filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(1424%) hue-rotate(157deg)
-                                brightness(83%) contrast(98%);
+                            filter: brightness(0) saturate(100%) invert(97%) sepia(0%) saturate(1424%)
+                                hue-rotate(157deg) brightness(83%) contrast(98%);
                         }
                     }
                     span {
@@ -507,10 +508,10 @@ header {
                             fill: #1875f0;
                         }
                     }
-                    &:hover p {
+                    &:hover .content__list {
                         color: #1875f0;
                     }
-                    .icon-nav {
+                    .content__list .icon-nav {
                         filter: brightness(0) saturate(100%) invert(37%) sepia(96%) saturate(4038%) hue-rotate(205deg)
                             brightness(99%) contrast(89%);
                     }
@@ -1226,20 +1227,21 @@ button {
 }
 .dashboard {
     display: flex;
-    width: 90%;
-    height: 500px;
+    width: 100%;
+    height: 80%;
     justify-content: center;
     &__content {
         box-shadow: 0 1px 2px 0 rgb(0 0 0 / 16%);
         border: solid 1px transparent;
         background: rgb(247, 247, 247);
-        height: 500px;
         width: 50%;
         padding: 5px 50px;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .specification__content {
         display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
     .product_input {
         display: flex;
@@ -1248,7 +1250,7 @@ button {
         span {
             margin: 10px 0px;
         }
-        input[type=textarea]{
+        input[type="textarea"] {
             height: 200px;
         }
         input {
@@ -1258,12 +1260,18 @@ button {
             color: #808080;
             font-size: 16px;
             background: #fff;
+            height: 20px;
         }
         .specific {
             display: flex;
-            input {
+            width: 70%;
+            input:first-child {
                 margin-right: 20px;
             }
+        }
+        .plus {
+            background: #fff;
+            text-align: center;
         }
         .select {
             cursor: pointer;
@@ -1460,7 +1468,7 @@ button {
             justify-content: space-between;
             box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
             width: auto;
-            width: 200px;
+            width: 250px;
             padding: 10px 20px;
         }
         &-right {
@@ -1589,6 +1597,15 @@ button {
     margin-bottom: 50px;
     padding: 30px 30px;
 }
+.add_coment_btn {
+    cursor: pointer;
+    border: 1px solid #1875f0;
+    width: 250px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
 .icon {
     height: 25px;
     img {
@@ -1605,6 +1622,180 @@ button {
         width: 50%;
         padding: 20px 10px;
         border: 1px solid #f0f0f0;
+    }
+}
+
+.signIn__content {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
+    padding: 20px 50px;
+    display: flex;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 50%;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        background-color: #f7f5f5;
+        box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        label {
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+        input {
+            box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
+            padding: 10px 5px;
+            margin-bottom: 10px;
+            color: #808080;
+            font-size: 16px;
+            background: #fff;
+            margin: 20px 0px;
+            &[type="submit"],
+            &[type="button"] {
+                cursor: pointer;
+                width: auto;
+                height: 50px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .signIn {
+        display: flex;
+        flex-direction: column;
+        label {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.comment {
+    padding: 40px 0px;
+    border-bottom: 1px solid #e4e4e4;
+    &__user {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &-name {
+            width: 200px;
+        }
+        &-avatar {
+            width: 30px;
+            margin-right: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        &-data {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__raiting {
+        display: flex;
+        margin: 10px 0px 25px 0px;
+        &-tag {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            background: #f0f0f0;
+            padding: 5px 15px;
+            box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
+        }
+    }
+    &-title {
+        font-weight: bold;
+        margin: 15px 0px;
+    }
+    &__dignity {
+    }
+}
+
+.addComment {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    span{
+        margin-top: 15px;
+    }
+    &-title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        textarea {
+            transition: all 0.5s;
+            resize: none;
+            border: none;
+            background-color: rgb(241, 241, 241);
+            box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 8%);
+            padding: 20px;
+            box-sizing: border-box;
+            height: 50px;
+            overflow: hidden;
+            &:focus {
+                height: 200px;
+            }
+            &::placeholder {
+                color: #000;
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+        }
+        input {
+            margin-top: 20px;
+        }
+    }
+    &-btns {
+        margin-top: 20px;
+        input {
+            cursor: pointer;
+            margin-right: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #1875f0;
+            color: #fff;
+            border-radius: 10px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        input[type="submit"] {
+            background: #fff;
+            border: 1px solid #1875f0;
+            color: #000;
+        }
+    }
+}
+
+.react-simple-star-rating {
+    margin-top: 10px;
+}
+
+.comment__images{
+    display: flex;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    overflow: auto;
+    &-item{
+        margin: 0px 5px;
+        width: 100px;
+        img{
+            width: 100%;
+        }
     }
 }
 

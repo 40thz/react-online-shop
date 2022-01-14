@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { SET_BASKET_PRDOUCT, SET_FAVOURITE_PRDOUCT, REMOVE_FAVOURITE_PRODUCT, REMOVE_BASKET_PRODUCT } from '../../store/actions'
 import { addIn } from '../../Components/addIn'
+import ReactStarsRating from 'react-awesome-stars-rating';
 
 const SearchCard = () => {
     const dispatch = useDispatch()
@@ -27,10 +28,14 @@ const SearchCard = () => {
                         </Link>
                         <div className="catalog__products-card-info">
                             <div className="catalog__products-card-raiting">
-                                <div className="catalog__products-card-icon">
-                                    <img src="/rate-svgrepo-com.svg" alt="" />
-                                </div>
-                                <span>{item.raiting}</span>
+                                <span>
+                                    <ReactStarsRating
+                                        isEdit={false}
+                                        value={item.raiting}
+                                        size={15}
+                                        primaryColor={'#1875f0'}
+                                    />
+                                </span>
                             </div>
                             <div className="catalog__products-card-raiting">
                                 <div className="catalog__products-card-icon">

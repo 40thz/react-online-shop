@@ -37,7 +37,7 @@ const Card = () => {
                     <div key={item.id} className="main__content__catalog__items__card">
                         <div className="main__content__catalog__items__card__header">
                             <div className="sale">
-                                <span>Sale 10%</span>
+                                {item.sale && <span>Sale</span>}
                             </div>
                             <div className="favorites">
                                 <svg onClick={() => favouriteArray.some(prod => prod.id === item.id) ? removeProduct(REMOVE_FAVOURITE_PRODUCT, favouriteArray, item.id) : addIn(item, favouriteArray, dispatch, SET_FAVOURITE_PRDOUCT)}

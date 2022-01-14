@@ -3,19 +3,21 @@ import Buying from './Buying'
 import Sidebar from '../Sidebar'
 import Slider from './Slider'
 import { useSelector, useDispatch } from 'react-redux'
-import { SET_CURRENT_ITEM } from '../../store/actions'
+import { SET_CURRENT_ITEM, SET_COMMENT } from '../../store/actions'
 import { useParams } from "react-router-dom";
 import Specs from './Specs'
 import Overview from './Overview'
 import Header from '../Header'
 import Descriptions from './Descriptions'
 import Comments from './Comments'
+import { getDatabase, ref, get, query, equalTo, orderByChild } from "firebase/database";
 
 const Product = () => {
 
     const dispatch = useDispatch()
     const products = useSelector(state => state.prdoucts.items)
     const currentItem = useSelector(state => state.prdoucts.currentItem[0])
+
     const params = useParams();
 
     React.useEffect(() => {
@@ -33,6 +35,18 @@ const Product = () => {
         }
     })
 
+    React.useEffect(() => {
+        const db = getDatabase();
+        const que = query(ref(db, 'comments'), orderByChild("id"), equalTo(parseInt(params.id)))
+        get(que)
+            .then((snapshot) => {
+                let list = []
+                snapshot.forEach(item => {
+                    list.push(item.val())
+                })
+                dispatch(SET_COMMENT(list))
+            })
+    }, [params])
 
     return (
         <Fragment>

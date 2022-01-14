@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { getDatabase, ref, set, remove } from "firebase/database";
-import { getStorage, ref as refStorage, uploadBytes, getDownloadURL, uploadBytesResumable } from "firebase/storage";
+import { getStorage, ref as refStorage, uploadBytes, getDownloadURL } from "firebase/storage";
 import { DB_REFRESH } from '../../store/actions'
 import { debounce } from "debounce";
 
@@ -28,7 +28,6 @@ const CreateCategory = () => {
         uploadBytes(storageRef, file).then(() => {
             getDownloadURL(storageRef, file).then((url) => setFileUrl(url))
         });
-        console.log(file)
     }
     const addCategory = () => {
         if (categoryInputs.length >= 1) {

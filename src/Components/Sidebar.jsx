@@ -1,6 +1,5 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { SET_CURRENT_CATEGORY } from '../store/actions'
 
@@ -27,12 +26,14 @@ const Sidebar = ({ items, setCurrentTab }) => {
                 items.map((item, i) => (
                     <HashLink smooth key={i} to={redirect(item)}>
                         <li onClick={() => item.type ? dispatch(SET_CURRENT_CATEGORY()) : ''}>
-                            <p>
+
+                            <div className="content__list">
                                 <div className="logo__list">
                                     <img src={item.icon} alt="" className="icon-nav" />
                                 </div>
                                 <span>  {item.name}</span>
-                            </p>
+                            </div>
+
                             <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
                                 width="6px" height="10px">
                                 <path fillRule="evenodd" fill="rgb(181, 181, 181)"

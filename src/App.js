@@ -9,6 +9,7 @@ import SearchProduct from './Components/SearchModul/SearchProduct';
 import BasketPage from './Components/Basket/BasketPage';
 import { getDatabase, ref, child, get } from "firebase/database";
 import Dashboard from './Components/adminPanel/Dashboard.jsx';
+import Auth from './Components/Auth';
 
 function App() {
   const dispatch = useDispatch()
@@ -17,29 +18,23 @@ function App() {
   React.useEffect(() => {
     const db = getDatabase();
     const dbRef = ref(db);
-
     get(child(dbRef, `products/`)).then((snapshot) => {
-      let dataArray = [];
+      let list = []
       snapshot.forEach(item => {
-        dataArray.push(item.val())
+        list.push(item.val())
       })
-      dispatch(SET_PRODUCTS(dataArray))
-    }).catch((error) => {
-      console.error(error);
-    });
-
+      dispatch(SET_PRODUCTS(list))
+    })
     get(child(dbRef, `categories/`)).then((snapshot) => {
-      let dataArray = [];
+      let list = []
       snapshot.forEach(item => {
-        dataArray.push(item.val())
+        list.push(item.val())
       })
-      dispatch(SET_CATEGORIES(dataArray))
-    }).catch((error) => {
-      console.error(error);
-    });
-    console.log('refresh')
-    console.log(process.env)
+      dispatch(SET_CATEGORIES(list))
+    })
+
   }, [dbrefresh])
+
 
   return (
     <div className="App">
@@ -50,6 +45,7 @@ function App() {
         <Route path="/search/:nameProduct" element={<SearchProduct />} />
         <Route path="/basket" element={<BasketPage />} />
         <Route path="/admin/*" element={<Dashboard />} />
+        <Route path="/auth/*" element={<Auth />} />
       </Routes>
 
     </div>
